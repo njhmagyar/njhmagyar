@@ -24,9 +24,8 @@ title: Resume
       <article>
         <div class="resume-wrapper mt-5">
           <p class="resume-main my-0">
-            I'm a product designer and full-stack developer with 7+ years of experience creating gamified,
-            learner-centered tools. I turn complex systems into delightful experiences—from mobile-first interfaces to scalable
-            content platforms. I thrive in fast-paced, mission-driven teams that value experimentation and playful polish.
+            Experienced frontend dev with 8 years building intuitive web applications, combining technical expertise with
+            user-centered design. Proven track record shipping products from 0-to-1 and scaling platforms for 200K users.
           </p>
           <div class="resume-aside">
             {% if resume.resume %}
@@ -37,60 +36,86 @@ title: Resume
         <div class="resume-wrapper">
           <div class="resume-main">
             <h2 class="mt-0">Experience</h2>
-            {% assign sections = site.resume_sections | where: "resume", resume.pid | sort:"order" %}
-            {% for section in sections %}
-            <div class="resume-section__header">
-              <h3 class="p--lg Nunito-bold mb-0">{{ section.employer }}</h3>
-            </div>
-            <div class="d-flex--md-and-up w-100 justify-between mt-point-five">
-              <p class="my-0"><em>{{ section.name }}</em></p>
-              <p class="my-0"><em>{{ section.duration }}</em></p>
-            </div>
-            <div class="resume-section__skills-wrapper">{{ section.content }}</div>
+            {% assign employers = site.resume_employers | where: "resume", resume.pid | sort:"order" %}
+            {% for employer in employers %}
+              <div class="resume-section__header">
+                <h3 class="p--lg Nunito-bold mb-0">{{ employer.name }}</h3>
+              </div>
+              {% assign sections = site.resume_sections | where: "employer", employer.pid | where: "resume", resume.pid | sort:"order" %}
+              {% for section in sections %}
+              <section class="mb-4">
+                <div class="d-flex--md-and-up w-100 justify-between mt-point-five">
+                  <p class="my-0"><em>{{ section.name }}</em></p>
+                  <p class="my-0"><em>{{ section.duration }}</em></p>
+                </div>
+                <div class="resume-section__skills-wrapper">{{ section.content }}</div>
+              </section>
+              {% endfor %}
              {% endfor %}
             <h2 class="mt-2">Education</h2>
             <ul class="unstyled-list">
               <li>
+                <p><strong>UX/UI for AI Products (7-week course)</strong>
+                  <br>Stanford University - 2025
+                </p>
+              </li>
+              <li>
                 <p><strong>Master of Science in Information: Human-Computer Interaction (4.0)</strong>
-                <br>University of Michigan School of Information</p>
+                <br>University of Michigan School of Information - 2018</p>
               </li>
               <li>
                 <p><strong>Bachelor of Arts in Organizational Studies and Spanish (3.9)</strong>
-                <br>University of Michigan College of Literature, Science & Arts</p>
+                <br>University of Michigan College of Literature, Science & Arts - 2013</p>
               </li>
               <li>
                 <p><strong>Bachelor of Fine Arts in Performance Acting (3.9)</strong>
-                <br>University of Michigan School of Music, Theatre & Dance</p>
+                <br>University of Michigan School of Music, Theatre & Dance - 2013</p>
               </li>
             </ul>
           </div>
           <aside class="resume-aside mb-3">
             <h2 class="mt-0">Skills</h2>
-            <h3 class="p--lg Nunito-bold mb-point-five">UX & Product Design</h3>
+            <h3 class="p--lg Nunito-bold mb-0">AI</h3>
             <ul class="unstyled-list">
-              <li><p class="mt-0 mb-point-five">Figma</p></li>
-              <li><p class="mt-0 mb-point-five">Mobile UX</p></li>
-              <li><p class="mt-0 mb-point-five">Gamification</p></li>
-              <li><p class="mt-0 mb-point-five">A/B Testing</p></li>
-              <li><p class="mt-0 mb-point-five">Information Architecture</p></li>
+              <li><p class="my-0 text--secondary">Claude Code</p></li>
+              <li><p class="my-0 text--secondary">Cursor</p></li>
+              <li><p class="my-0 text--secondary">OpenAI APIs</p></li>
+              <li><p class="my-0 text--secondary">Eleven Labs</p></li>
+              <li><p class="my-0 text--secondary">RAG</p></li>
             </ul>
-            <h3 class="p--lg Nunito-bold mb-point-five">Tech (fluent)</h3>
+            <h3 class="p--lg Nunito-bold mb-0">UX & Product Design</h3>
             <ul class="unstyled-list">
-              <li><p class="mt-0 mb-point-five">CSS</p></li>
-              <li><p class="mt-0 mb-point-five">Vue.js</p></li>
-              <li><p class="mt-0 mb-point-five">Django</p></li>
-              <li><p class="mt-0 mb-point-five">PostgreSQL</p></li>
-              <li><p class="mt-0 mb-point-five">REST APIs</p></li>
-              <li><p class="mt-0 mb-point-five">Git</p></li>
-              <li><p class="mt-0 mb-point-five">WCAG Accessibility</p></li>
+              <li><p class="my-0 text--secondary">Figma</p></li>
+              <li><p class="my-0 text--secondary">Illustrator</p></li>
+              <li><p class="my-0 text--secondary">AfterEffects</p></li>
+              <li><p class="my-0 text--secondary">Rive</p></li>
+              <li><p class="my-0 text--secondary">Usability Testing</p></li>
+              <li><p class="my-0 text--secondary">Information Architecture</p></li>
+              <li><p class="my-0 text--secondary">Gamification</p></li>
+              <li><p class="my-0 text--secondary">Design Systems</p></li>
+              <li><p class="my-0 text--secondary">A/B Testing</p></li>
             </ul>
-            <h3 class="p--lg Nunito-bold mb-point-five">Cross-Functional</h3> 
+            <h3 class="p--lg Nunito-bold mb-0">Tech (Fluent)</h3>
             <ul class="unstyled-list">
-              <li><p class="mt-0 mb-point-five">Design Systems</p></li> 
-              <li><p class="mt-0 mb-point-five">Research & Usability Testing</p></li> 
-              <li><p class="mt-0 mb-point-five">Agile</p></li> 
-              <li><p class="mt-0 mb-point-five">Mentorship</p></li> 
-              <li><p class="mt-0 mb-point-five">Product Strategy</p></li>
+              <li><p class="my-0 text--secondary">HTML</p></li>
+              <li><p class="my-0 text--secondary">CSS/SCSS</p></li>
+              <li><p class="my-0 text--secondary">Vue.js</p></li>
+              <li><p class="my-0 text--secondary">Python/Django</p></li>
+              <li><p class="my-0 text--secondary">Ruby/Rails</p></li>
+              <li><p class="my-0 text--secondary">PostgreSQL</p></li>
+              <li><p class="my-0 text--secondary">REST APIs</p></li>
+              <li><p class="my-0 text--secondary">Git</p></li>
+              <li><p class="my-0 text--secondary">WCAG Accessibility</p></li>
+            </ul>
+            <h3 class="p--lg Nunito-bold mb-0">Leadership</h3> 
+            <ul class="unstyled-list">
+              <li><p class="my-0 text--secondary">Public Speaking/Demos</p></li> 
+              <li><p class="my-0 text--secondary">Stakeholder Management</p></li> 
+              <li><p class="my-0 text--secondary">Workshop Facilitation</p></li> 
+              <li><p class="my-0 text--secondary">Roadmapping</p></li> 
+              <li><p class="my-0 text--secondary">Requirements Gathering</p></li> 
+              <li><p class="my-0 text--secondary">Coaching</p></li>
+              <li><p class="my-0 text--secondary">Career Pathing</p></li>
             </ul>
           </aside>
         </div>

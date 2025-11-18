@@ -20,6 +20,8 @@ collections:
     output: true
   resume_sections:
     output: true
+  resume_employers:
+    output: true
 
 defaults:
   - scope:

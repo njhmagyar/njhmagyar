@@ -1,21 +1,16 @@
 ---
 resume: ux_designer
+employer: cai
 order: 1
-name: Lead Software Developer, previously Senior UX Designer
-employer: University of Michigan Center for Academic Innovation
-duration: 2017 - Present
-location: Ann Arbor, MI
+name: Lead Software Developer
+duration: 2023 - Present
 ---
 
-- Partners with design and research teams to define product roadmaps, sprint scopes, and success metrics.
+- **Implemented new design system** <span class="text--secondary">using modular LESS stylesheets and reusable Django patterns for an online learning catalog featuring 300+ courses and serving 200K+ account holders</span>
 
-- Mentors early-career devs and designers, conducts hiring, and defines internal career pathways.
+- **Defined and led 4-year modernization roadmap,** <span class="text--secondary">migrating legacy Rails app frontend (Angular→Vue)</span>
 
-- Designed & built a modular CMS interface used to manage 300+ courses and serve 200K+ users, balancing editorial UX with backend scalability. Currently using internal qualitative feedback to deliver the next version.
-
-- Developed a personalized progress email system that nudges users toward next steps, increasing progression through the app's core user engagement funnel and driving behavior towards sticky actions.
-
-- Coordinated multiple workstreams and drove the design/development of a feature that advertises 3rd party content, improving stakeholder satisfaction with internal tooling and positioning for rapid experimentation.
+- **Defined 4-tier career path** <span class="text--secondary"> and competency benchmarks for software developer roles</span>
 
 
 
