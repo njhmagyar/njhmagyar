@@ -7,8 +7,8 @@ tagline: I transformed a confusing content authoring flow into a guided collabor
 overview: Codespec is an online programming practice environment where learners of all levels can solve each problem 5 ways. For this project, I employed informal interviewing, user-centered design thinking, AI-powered prototyping, and usability testing to transform a confusing content authoring flow into a guided collaboration experience between computer science instructors and GenAI.
 where: Codespec / 2025
 role: As co-founder and a solo designer, I iterated on a critical UX challenge and presented a recommendation to my co-founder.
-order: 2
-featured: true
+order: 5
+featured: false
 cover_image: /assets/images/codespec/codespec-cover-new.png
 cover_video: /assets/videos/codespec.mp4
 overlay_slug: codespec
