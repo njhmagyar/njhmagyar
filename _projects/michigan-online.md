@@ -13,7 +13,7 @@ cover_image: /assets/images/michigan-online/michigan-online--cover.png
 cover_video: /assets/videos/michigan-online.mp4
 overlay_slug: michigan-online
 read_more: [Twirlmate,Codespec]
-published: true
+published: false
 ---
 
 <div class="mb-4">
