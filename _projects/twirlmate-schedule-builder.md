@@ -8,11 +8,11 @@ overview: 'Event organizers spent 50+ hours manually scheduling baton twirling c
 where: Twirlmate / 2025 - Used by 7 contests to schedule 4,000+ performances
 role: 'As the sole designer and developer, I conducted user research with event organizers, designed the complete user experience from registration through schedule generation, and built the full-stack solution using Django and Vue.js.'
 order: 1
-featured: true
+featured: false
 cover_image: /assets/images/twirlmate/schedule-builder/twirlmate-schedule-cover.png
 overlay_slug: twirlmate
 read_more: []
-published: true
+published: false
 ---
 
 <div class="mb-4">
