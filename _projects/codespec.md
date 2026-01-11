@@ -14,7 +14,7 @@ cover_video: /assets/videos/codespec.mp4
 overlay_slug: codespec
 read_more: []
 prototype_id: "codespec-prototype"
-published: true
+published: false
 ---
 <div class="mb-4" id="codespec-prototype">
   <div class="prototype-container" style="position: relative;">

@@ -21,9 +21,9 @@ layout: default
     <li class="nhm-card-grid__item nhm-card--horizontal image-last--mobile fade-in-up">
       <a href="{{ project.url }}" class="nhm-card__image-wrapper project-card-hover">
         {% if project.cover_video %}
-        <video src="{{ project.cover_video }}" class="d-block w-100 rounded--mega object-fit--contain" alt="{{ project.title }}" autoplay muted loop playsinline></video>
+        <video src="{{ project.cover_video }}" class="d-block w-100 rounded object-fit--contain" alt="{{ project.title }}" autoplay muted loop playsinline></video>
         {% else %}
-        <img src="{{ project.cover_image }}" class="d-block w-100 rounded--mega object-fit--contain" alt="{{ project.title }}" />
+        <img src="{{ project.cover_image }}" class="d-block w-100 rounded object-fit--contain" alt="{{ project.title }}" />
         {% endif %}
       </a>
       <a href="{{ project.url }}" class="nhm-card__body">

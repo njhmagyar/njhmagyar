@@ -8,12 +8,12 @@ overview: 'Multi-step registration flows often fail when they assume users will 
 where: Twirlmate / 2025
 role: 'As the sole designer and developer on the project, I leveraged my visual creativity and coding skills to solve a critical user experience bottleneck while ensuring technical feasibility.'
 order: 1
-featured: true
+featured: false
 cover_image: /assets/images/twirlmate/twirlmate-cover-4-mobile-2.svg
 cover_video: /assets/videos/twirlmate-yellow.mp4
 overlay_slug: twirlmate
 read_more: []
-published: true
+published: false
 ---
 
 <div class="mb-4">
